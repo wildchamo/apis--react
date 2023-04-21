@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Card } from "./components/card";
+import { CardContainer } from "./components/cardcontainer.jsx";
 import "./App.css";
 
 //link con acceso a la api
@@ -12,9 +14,26 @@ function App() {
     fetch(ENDPOINT)
       .then((res) => res.json()) //recibo la información y la convierto a json para ser consumida desde la app
       .then((data) => setData(data)); //guardo la información en el estado
+    console.log(data);
   }, []);
 
-  return <></>;
+  return (
+    <>
+      <h1>Album de fotos</h1>
+
+      <CardContainer>
+        {data.map((card) => (
+          <Card
+            key={card.url}
+            albumId={card.albumId}
+            id={card.id}
+            title={card.title}
+            url={card.url}
+          />
+        ))}
+      </CardContainer>
+    </>
+  );
 }
 
 export default App;
