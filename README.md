@@ -15,3 +15,10 @@ Se debe utilizar:
 1. Traer los datos de la API cuando se inicia la aplicación con UseEffect y useState
 2. Crear un componente hijo que despliegue la información de un objeto de la api
 3. crear un componente padre que encapsule a todos estos elementos y se encargue de hacer un map
+
+# Para correr el proyecto
+```
+npm install
+npm run dev
+
+```
