@@ -4,7 +4,7 @@ import { CardContainer } from "./components/cardcontainer.jsx";
 import "./App.css";
 
 //link con acceso a la api
-const ENDPOINT = "https://jsonplaceholder.typicode.com/photos";
+const ENDPOINT = "https://jsonplaceholder.typicode.com/albums/1/photos"; //exploro documentación y descubro que hay formas de traer menos elementos
 
 function App() {
   const [data, setData] = useState([]); //se crea un estado para guardar los datos que traeremos de la API
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <h1>Album de fotos</h1>
-
+      {/* Envio como componente hijo a todas las cards al componente car container */}
       <CardContainer>
         {data.map((card) => (
           <Card

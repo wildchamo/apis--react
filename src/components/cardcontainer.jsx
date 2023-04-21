@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./cardcontainer.css"
 
-function CardContainer({children}) {
-  return (
-    <div>cardcontainer</div>
-  )
+function CardContainer({ children }) {
+  return <div className="cardcontainer">{children}</div>;
 }
 
-export {CardContainer}
+export { CardContainer };
