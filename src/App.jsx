@@ -4,8 +4,12 @@ import { CardContainer } from "./components/cardcontainer.jsx";
 import "./App.css";
 
 //link con acceso a la api
-const ENDPOINT = "https://jsonplaceholder.typicode.com/albums/1/photos"; //exploro documentación y descubro que hay formas de traer menos elementos
 
+const ENDPOINT = "https://jsonplaceholder.typicode.com/albums/1/photos"; //exploro documentación y descubro que hay formas de traer menos elementos
+//const ENDPOINT = "https://jsonplaceholder.typicode.com/photos";
+
+
+ //en el caso que se quieran utilizar los 5000, descomentar esta linea y comentar la de arriba
 function App() {
   const [data, setData] = useState([]); //se crea un estado para guardar los datos que traeremos de la API
 
