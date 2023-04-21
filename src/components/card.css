@@ -6,3 +6,8 @@
 .card{
     width: 300px;
 }
+
+.card:hover{
+    background-color: #383838;
+    cursor: pointer;
+}

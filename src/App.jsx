@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <h1>Album de fotos</h1>
+      <h1>Album de canciones</h1>
       {/* Envio como componente hijo a todas las cards al componente car container */}
       <CardContainer>
         {data.map((card) => (
@@ -32,6 +32,7 @@ function App() {
           />
         ))}
       </CardContainer>
+      <footer>Made with love by</footer>
     </>
   );
 }

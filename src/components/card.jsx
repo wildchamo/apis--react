@@ -5,9 +5,8 @@ function Card({ albumId, id, title, url }) {
   return (
     <div className="card">
       <img src={url} />
-      <p>{albumId}</p>
-      <p>{id}</p>
-      <p>{title}</p>
+      <h2>{title}</h2>
+      <p>Track No {id} del albúm {albumId}</p>
     </div>
   );
 }
